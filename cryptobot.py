@@ -3,10 +3,7 @@ import json
 from telegram.ext import Updater, CommandHandler
 # https://python-telegram-bot.readthedocs.io/en/stable/telegram.html
 from calculations import get_price, count_profit, count_price_fall, should_i_buy
-
-
-TOKEN = '6299265297:AAHSHovl8J44vkRvnchbbeBmHHWJrkvmUNA'
-
+from config import TOKEN
 
 def make_money(update, context):
     chat_id = update.effective_chat.id
