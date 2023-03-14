@@ -5,6 +5,7 @@ from telegram.ext import Updater, CommandHandler
 from calculations import get_price, count_profit, count_price_fall, should_i_buy
 from config import TOKEN
 
+
 def make_money(update, context):
     chat_id = update.effective_chat.id
     context.bot.send_message(chat_id=chat_id, text='Робот успешно запущен!')
